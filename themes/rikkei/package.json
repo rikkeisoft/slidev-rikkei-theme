@@ -1,0 +1,32 @@
+{
+  "name": "slidev-theme-rikkei",
+  "version": "0.0.1",
+  "author": "HuyNQ <huy@huynq.net>",
+  "description": "A theme for Slidev which will be used at Rikkei Corp",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "rikkei",
+    "hnq90"
+  ],
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://rikkeisoft.com.com/",
+  "slidev": {
+    "colorSchema": "both",
+    "highlighter": "all"
+  },
+  "scripts": {
+    "dev": "slidev example.md --open",
+    "build": "slidev build example.md && cp -r _redirects ./dist/_redirects",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.22.1",
+    "@slidev/theme-default": "^0.19.1"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.12.3"
+  }
+}
