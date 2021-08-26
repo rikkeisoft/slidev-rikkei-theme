@@ -4,7 +4,7 @@ colorSchema: dark
 highlighter: prism
 aspectRatio: '16/9'
 canvasWidth: 980
-monaco: dev
+monaco: true
 lineNumbers: true
 download: true
 titleTemplate: '%s - Rikkei Corp'
