@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "yarn playwright install-deps && yarn run build"
+  command = "yarn run build"
 
 [[redirects]]
   from = "/*"

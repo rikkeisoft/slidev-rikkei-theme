@@ -6,7 +6,7 @@ aspectRatio: '16/9'
 canvasWidth: 980
 monaco: true
 lineNumbers: true
-download: true
+download: false
 titleTemplate: '%s - Rikkei Corp'
 layout: intro
 logoHeader: /logo.png
