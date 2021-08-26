@@ -1,13 +1,19 @@
 ---
 theme: ./themes/rikkei
-colorSchema: light
+colorSchema: dark
+highlighter: prism
+aspectRatio: '16/9'
+canvasWidth: 980
+monaco: dev
+lineNumbers: true
+download: true
+titleTemplate: '%s - Rikkei Corp'
 layout: intro
 logoHeader: /logo.png
 website: https://rikkeisoft.com
 handle: hnq90
 introImage: >-
   https://uilogos.co/img/logomark/earth.png
-highlighter: prism
 info: |
   ## Rikkei - Slidev template
   Template for Rikkei's presentations
@@ -83,6 +89,37 @@ layout: cover
 Use code snippets and get the highlighting directly![^1]
 
 ```ts {all|2|1-6|9|all}
+interface ErrorHandling {
+  success: boolean;
+  error?: { message: string };
+}
+
+interface ArtworksData {
+  artworks: { title: string }[];
+}
+
+interface ArtistsData {
+  artists: { name: string }[];
+}
+
+// These interfaces can be composed in responses which have
+// both consistent error handling, and their own data.
+
+type ArtworksResponse = ArtworksData & ErrorHandling;
+type ArtistsResponse = ArtistsData & ErrorHandling;
+```
+
+---
+logoHeader: /logo.png
+website: https://rikkeisoft.com
+handle: hnq90
+---
+
+# Monaco Editor
+
+Use code snippets and get the highlighting directly![^1]
+
+```ts {monaco}
 interface ErrorHandling {
   success: boolean;
   error?: { message: string };
